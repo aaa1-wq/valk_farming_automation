@@ -1,0 +1,11 @@
+# 部落冲突自动化脚本依赖 / Clash of Clans automation dependencies
+# 安装 / Install:  pip install -r requirements.txt
+#
+# 版本号与开发环境 .venv 中实际安装的版本一致 (Python 3.13)。
+# Versions below match the ones actually installed in the development .venv.
+
+pyautogui==0.9.54        # 鼠标/键盘控制 + locateOnScreen 图像识别
+pynput==1.8.1            # 全局键盘监听（F9 退出）
+opencv-python==4.12.0.88 # 必需：locateOnScreen 的 confidence 参数依赖它
+pillow==12.0.0           # 截图处理（pyautogui 依赖）
+numpy==2.2.6             # 图像数组运算
